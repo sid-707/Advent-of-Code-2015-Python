@@ -1,5 +1,5 @@
 import unittest
-from main import get_floor
+from get_floor import get_floor
 
 
 class TestStringMethods(unittest.TestCase):
