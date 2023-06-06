@@ -1,1 +1,0 @@
-from .calculator import get_wrapping_paper_amount

@@ -1,8 +1,8 @@
 import unittest
-from calculator import get_ribbon_amount
+from .wrapping_paper import get_wrapping_paper_amount
 
 
-class TestStringMethods(unittest.TestCase):
+class TestWrappingPaperMethods(unittest.TestCase):
     def test_1(self):
         dimensions = {
             "l": 2,
@@ -11,7 +11,7 @@ class TestStringMethods(unittest.TestCase):
             "min_dimension": 2,
             "second_min_dimension": 3
         }
-        self.assertEqual(get_ribbon_amount(dimensions), 34)
+        self.assertEqual(get_wrapping_paper_amount(dimensions), 58)
 
     def test_2(self):
         dimensions = {
@@ -21,7 +21,7 @@ class TestStringMethods(unittest.TestCase):
             "min_dimension": 1,
             "second_min_dimension": 1
         }
-        self.assertEqual(get_ribbon_amount(dimensions), 14)
+        self.assertEqual(get_wrapping_paper_amount(dimensions), 43)
 
 
 if __name__ == "__main__":

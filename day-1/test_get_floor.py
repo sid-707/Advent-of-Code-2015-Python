@@ -2,7 +2,7 @@ import unittest
 from get_floor import get_floor
 
 
-class TestStringMethods(unittest.TestCase):
+class TestGetFloor(unittest.TestCase):
     def test_1(self):
         self.assertDictEqual(
             get_floor("(())"), {"floor": 0, "entered_basement_position": None}

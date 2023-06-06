@@ -1,5 +1,4 @@
-from wrapping_paper import get_wrapping_paper_amount
-from ribbon import get_ribbon_amount
+from packaging import get_wrapping_paper_amount, get_ribbon_amount
 from utils import get_dimensions_dict
 
 total_wrapping_paper_amount = 0

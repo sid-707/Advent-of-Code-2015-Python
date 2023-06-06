@@ -1,8 +1,8 @@
 import unittest
-from generator import get_dimensions_dict
+from .generator import get_dimensions_dict
 
 
-class TestStringMethods(unittest.TestCase):
+class TestGeneratorMethod(unittest.TestCase):
     def test_1(self):
         dimensions = {
             "l": 2,

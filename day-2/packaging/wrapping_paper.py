@@ -1,3 +1,5 @@
+from .formulas import get_surface_area
+
 def get_wrapping_paper_amount(dimensions):
     l = dimensions['l']
     w = dimensions['w']
@@ -5,4 +7,4 @@ def get_wrapping_paper_amount(dimensions):
     min_dimension = dimensions['min_dimension']
     second_min_dimension = dimensions['second_min_dimension']
 
-    return 2 * l * w + 2 * w * h + 2 * h * l + min_dimension * second_min_dimension
+    return get_surface_area(l, w, h) + min_dimension * second_min_dimension
