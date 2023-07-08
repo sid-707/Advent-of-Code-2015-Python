@@ -9,6 +9,11 @@ class Lights:
     def __coords_to_int(self, coords):
         return [int(x) for x in coords.split(',')]
 
+    def reset(self):
+        for i in range(DIMENSIONS):
+            for j in range(DIMENSIONS):
+                self.__grid[i][j] = 0
+
     def get_lights(self):
         return self.__grid
 
